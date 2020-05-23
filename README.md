@@ -2,6 +2,12 @@
 ENode extensions
 
 
+## ENode.RabbitMQ
+RabbitMQ adapter for enode.
+
+[ENode.RabbitMQ](ENode.RabbitMQ/README.md)
+
+
 ## ENode.Eventual2PC
 Implement Eventual2PC by enode.
 
