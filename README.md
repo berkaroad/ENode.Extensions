@@ -1,6 +1,7 @@
 # ENode.Extensions
 ENode extensions
 
+Reference: [ENode](https://github.com/tangxuehua/enode)
 
 ## ENode.RabbitMQ
 RabbitMQ adapter for enode.
