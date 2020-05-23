@@ -20,6 +20,12 @@ enodeConfigure.InitializeRedisPublishedVersionStore(redisConfig, "demo");
 
 ```
 
+## Clean Test Data
+```sh
+# clean demo's published version data.
+ redis-cli -h 192.168.117.198 -p 6379 -n 0 keys "demo:pv:*" | xargs redis-cli -h 192.168.117.198 -p 6379 -n 0 del
+```
+
 ## Publish History
 
 ### 1.0.0
