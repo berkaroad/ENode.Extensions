@@ -1,6 +1,8 @@
 # ENode.RabbitMQ
 RabbitMQ adapter for ENode.
 
+Reference: [RabbitMQTopic](https://github.com/berkaroad/RabbitMQTopic)
+
 ## Install
 
 ```
