@@ -1,5 +1,5 @@
 # ENode.AggregateSnapshotStore
- AggregateSnapshotStore adapter for enode.
+AggregateSnapshotStore adapter for enode.
 
 The default implementation of `IAggregateSnapshotRequestQueue` is `DefaultAggregateSnapshotRequestProcessor`, that will take snapshot in single thread in ProcessorHost.
 

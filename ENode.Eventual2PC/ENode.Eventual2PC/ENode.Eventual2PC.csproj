@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/berkaroad/ENode.Extensions/master/tree/ENode.Eventual2PC</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/berkaroad/ENode.Extensions.git</RepositoryUrl>
+    <Authors>Jerry Bai</Authors>
+    <PackageId>ENode.Eventual2PC</PackageId>
+    <Version>1.2.2</Version>
+    <Title>ENode.Eventual2PC</Title>
+    <PackageIcon>_content\package.png</PackageIcon>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <ContentTargetFolders>_content</ContentTargetFolders>
+    <Description>Implement Eventual2PC by enode</Description>
+    <Summary>Implement Eventual2PC by enode</Summary>
+    <PackageTags>enode 2pc tcc eventual transaction processmanager saga cqrs</PackageTags>
+    <PackageReleaseNotes>https://github.com/berkaroad/ENode.Extensions/master/tree/ENode.Eventual2PC
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ENode" Version="2.9.6" />
+    <PackageReference Include="Eventual2PC" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\package.png">
+      <Link>_content\package.png</Link>
+    </Content>
+  </ItemGroup>
+
+</Project>
