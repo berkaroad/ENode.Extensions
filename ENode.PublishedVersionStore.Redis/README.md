@@ -28,6 +28,10 @@ enodeConfigure.InitializeRedisPublishedVersionStore(redisConfig, "demo");
 
 ## Publish History
 
+### 1.0.1
+
+- 1）Check aggregate root type, when get or update version. If different, return 0 or reject update.
+
 ### 1.0.0
 
 - init

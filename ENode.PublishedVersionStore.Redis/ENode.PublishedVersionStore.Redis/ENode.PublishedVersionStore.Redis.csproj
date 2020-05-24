@@ -7,8 +7,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageId>ENode.PublishedVersionStore.Redis</PackageId>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Version>1.0.1</Version>
     <Title>ENode.PublishedVersionStore.Redis</Title>
     <RepositoryUrl>https://github.com/berkaroad/ENode.Extensions.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/berkaroad/ENode.Extensions/tree/master/ENode.PublishedVersionStore.Redis</PackageProjectUrl>

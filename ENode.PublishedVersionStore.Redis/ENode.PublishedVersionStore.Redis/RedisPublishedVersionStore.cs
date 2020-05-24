@@ -1,4 +1,5 @@
 ﻿using ENode.Eventing;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ENode.PublishedVersionStore.Redis
@@ -34,15 +35,14 @@ namespace ENode.PublishedVersionStore.Redis
         public async Task<int> GetPublishedVersionAsync(string processorName, string aggregateRootTypeName, string aggregateRootId)
         {
             var db = _connection.GetDatabase();
-            var verVal = await db.HashGetAsync(GetPublishedVersionKey(processorName, aggregateRootId), _verField);
-            if (verVal.HasValue)
-            {
-                return int.Parse(verVal.ToString());
-            }
-            else
+            var item = await db.HashGetAllAsync(GetPublishedVersionKey(processorName, aggregateRootId));
+            if (item == null || item.Length < 2
+                || item.First(f => f.Name == _typeField).Value != aggregateRootTypeName)
             {
                 return 0;
             }
+            var version = (int)item.First(f => f.Name == _verField).Value;
+            return version;
         }
 
         /// <summary>
@@ -57,11 +57,12 @@ namespace ENode.PublishedVersionStore.Redis
         {
             const string LUA_SCRIPT = @"
 local ver = redis.call('HGET', @key, @versionField);
+local type = redis.call('HGET', @key, @typeField);
 if not ver then
     redis.call('HSET', @key, @typeField, @typeVal);
     redis.call('HSET', @key, @versionField, @verVal);
     return 1;
-elseif ver<@verVal then
+elseif ver<@verVal and type==@typeVal then
     redis.call('HSET', @key, @versionField, @verVal);
     return 1;
 else
