@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/berkaroad/ENode.Extensions/master/tree/ENode.Eventual2PC</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/berkaroad/ENode.Extensions/tree/master/ENode.Eventual2PC</PackageProjectUrl>
     <RepositoryUrl>https://github.com/berkaroad/ENode.Extensions.git</RepositoryUrl>
     <Authors>Jerry Bai</Authors>
     <PackageId>ENode.Eventual2PC</PackageId>
@@ -18,7 +18,7 @@
     <Description>Implement Eventual2PC by enode</Description>
     <Summary>Implement Eventual2PC by enode</Summary>
     <PackageTags>enode 2pc tcc eventual transaction processmanager saga cqrs</PackageTags>
-    <PackageReleaseNotes>https://github.com/berkaroad/ENode.Extensions/master/tree/ENode.Eventual2PC
+    <PackageReleaseNotes>https://github.com/berkaroad/ENode.Extensions/tree/master/ENode.Eventual2PC
     </PackageReleaseNotes>
   </PropertyGroup>
 

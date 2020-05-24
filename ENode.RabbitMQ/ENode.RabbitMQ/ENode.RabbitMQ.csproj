@@ -6,14 +6,14 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/berkaroad/ENode.Extensions/master/tree/ENode.RabbitMQ</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/berkaroad/ENode.Extensions/tree/master/ENode.RabbitMQ</PackageProjectUrl>
     <RepositoryUrl>https://github.com/berkaroad/ENode.Extensions.git</RepositoryUrl>
     <Authors>Jerry Bai</Authors>
     <PackageId>ENode.RabbitMQ</PackageId>
     <Version>1.1.2</Version>
     <Title>ENode.RabbitMQ</Title>
     <Description>RabbitMQ adapter for ENode</Description>
-    <PackageReleaseNotes>https://github.com/berkaroad/ENode.Extensions/master/tree/ENode.RabbitMQ
+    <PackageReleaseNotes>https://github.com/berkaroad/ENode.Extensions/tree/master/ENode.RabbitMQ
     </PackageReleaseNotes>
     <PackageTags>rabbitmq enode equeue</PackageTags>
   </PropertyGroup>

@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/berkaroad/ENode.Extensions/master/tree/ENode.AggregateSnapshotStore</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/berkaroad/ENode.Extensions/tree/master/ENode.AggregateSnapshotStore</PackageProjectUrl>
     <RepositoryUrl>https://github.com/berkaroad/ENode.Extensions.git</RepositoryUrl>
     <Authors>Jerry Bai</Authors>
     <PackageId>ENode.AggregateSnapshotStore</PackageId>
@@ -18,7 +18,7 @@
     <Description>AggregateSnapshotStore adapter for enode</Description>
     <Summary>AggregateSnapshotStore adapter for enode</Summary>
     <PackageTags>snapshot eventsourcing cqrs aggregate enode</PackageTags>
-    <PackageReleaseNotes>https://github.com/berkaroad/ENode.Extensions/master/tree/ENode.AggregateSnapshotStore
+    <PackageReleaseNotes>https://github.com/berkaroad/ENode.Extensions/tree/master/ENode.AggregateSnapshotStore
     </PackageReleaseNotes>
   </PropertyGroup>
 
