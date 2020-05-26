@@ -85,28 +85,28 @@ namespace BankTransferSample
             {
                 AmqpUri = amqpUri,
                 ClientName = clientName,
-                Mode = ConsumeMode.Pull,
+                Mode = ConsumeMode.Push,
                 PrefetchCount = (ushort)ENode.Configurations.ENodeConfiguration.Instance.Setting.EventMailBoxPersistenceMaxBatchSize
             }).Subscribe(Constants.CommandTopic);
             _applicationMessageConsumer = new ApplicationMessageConsumer().InitializeRabbitMQ(new ConsumerSettings
             {
                 AmqpUri = amqpUri,
                 ClientName = clientName,
-                Mode = ConsumeMode.Pull,
+                Mode = ConsumeMode.Push,
                 PrefetchCount = (ushort)ENode.Configurations.ENodeConfiguration.Instance.Setting.EventMailBoxPersistenceMaxBatchSize
             }).Subscribe(Constants.ApplicationMessageTopic);
             _eventConsumer = new DomainEventConsumer().InitializeRabbitMQ(new ConsumerSettings
             {
                 AmqpUri = amqpUri,
                 ClientName = clientName,
-                Mode = ConsumeMode.Pull,
+                Mode = ConsumeMode.Push,
                 PrefetchCount = (ushort)ENode.Configurations.ENodeConfiguration.Instance.Setting.EventMailBoxPersistenceMaxBatchSize
             }).Subscribe(Constants.EventTopic);
             _exceptionConsumer = new DomainExceptionConsumer().InitializeRabbitMQ(new ConsumerSettings
             {
                 AmqpUri = amqpUri,
                 ClientName = clientName,
-                Mode = ConsumeMode.Pull,
+                Mode = ConsumeMode.Push,
                 PrefetchCount = (ushort)ENode.Configurations.ENodeConfiguration.Instance.Setting.EventMailBoxPersistenceMaxBatchSize
             }).Subscribe(Constants.ExceptionTopic);
 
