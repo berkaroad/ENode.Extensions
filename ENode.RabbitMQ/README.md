@@ -22,6 +22,9 @@ Concurrent test complete.
 
 ## Publish History
 
+### 1.1.4
+1）Upgrade RabbitMQTopic package
+
 ### 1.1.3
 1）Upgrade RabbitMQTopic package
 
