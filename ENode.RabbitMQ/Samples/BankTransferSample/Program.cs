@@ -124,7 +124,8 @@ namespace BankTransferSample
             };
             var loggerFactory = new SerilogLoggerFactory()
                 .AddFileLogger("ECommon", Path.Combine("logs", "ecommon"))
-                .AddFileLogger("ENode", Path.Combine("logs", "enode"));
+                .AddFileLogger("ENode", Path.Combine("logs", "enode"))
+                .AddFileLogger("ENode.RabbitMQ", Path.Combine("logs", "enode.rabbitmq"));
             _configuration = ECommon.Configurations.Configuration
                 .Create()
                 .UseAutofac()

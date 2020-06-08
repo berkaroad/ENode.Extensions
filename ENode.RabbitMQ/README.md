@@ -11,12 +11,14 @@ dotnet add package ENode.RabbitMQ
 
 ## Usage
 
-See [DemoApp](src/Samples/BankTransferSample/ENodeExtensions.cs)
+See [BankTransferSample](Samples/BankTransferSample/ENodeExtensions.cs)
 
 ## Performance
 
+Test at 8Core Macbook, that running both RabbitMQ and test program.
+
 ```
-All transfer transactions completed, time spent: 68154ms, throughput: 14 transactions per second.
+All transfer transactions completed, time spent: 6226ms, throughput: 160 transactions per second.
 Concurrent test complete.
 ```
 
